@@ -4,11 +4,11 @@ import styled from 'styled-components'
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 1200px;
-  height: 630px;
+  width: 2400px;
+  height: 1260px;
   background: #f55875;
   color: white;
-  padding: 48px 32px;
+  padding: 96px 72px;
   box-sizing: border-box;
   align-items: flex-start;
 `

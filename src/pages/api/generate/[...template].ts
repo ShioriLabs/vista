@@ -9,7 +9,12 @@ const generate = async (req: NextApiRequest, res: NextApiResponse): Promise<void
   const templateUrl = `http://localhost:${process.env.PORT || 3000}/templates/${templateName}?${queryString}`
 
   const browser = await chromium.launch()
-  const page = await browser.newPage()
+  const page = await browser.newPage({
+    viewport: {
+      width: 2400,
+      height: 1260
+    }
+  })
   await page.goto(templateUrl)
   const image = await page.screenshot()
   await browser.close()

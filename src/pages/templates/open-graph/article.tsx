@@ -14,20 +14,20 @@ const Content = styled.section`
 const Title = styled.h1`
   margin: 0px;
   font-family: Quicksand, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 64px;
+  font-size: 128px;
   font-weight: bold;
 `
 
 const Subtitle = styled.p`
   margin: 0px;
-  margin-top: 24px;
+  margin-top: 48px;
   font-family: Quicksand, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 32px;
+  font-size: 64px;
   font-weight: 500;
 `
 
 const Logo = styled.img`
-  height: 64px;
+  height: 128px;
 `
 
 interface Props {

@@ -6,7 +6,7 @@
     "test": "eslint src/**/*.{ts,tsx} --fix",
     "build": "next build",
     "dev": "next dev",
-    "start": "next start",
+    "start": "next start --port ${PORT-3000}",
     "prepare": "husky install"
   },
   "repository": {

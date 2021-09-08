@@ -11,9 +11,10 @@ const generate = async (req: NextApiRequest, res: NextApiResponse): Promise<void
   const browser = await chromium.launch()
   const page = await browser.newPage({
     viewport: {
-      width: 2400,
-      height: 1260
-    }
+      width: 1200,
+      height: 630
+    },
+    javaScriptEnabled: false
   })
   await page.goto(templateUrl)
   const image = await page.screenshot()
